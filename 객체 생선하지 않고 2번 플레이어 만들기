@@ -1,0 +1,23 @@
+package org.example;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// 문제 : 자동차 객체를 담을 변수를 만들어주세요.
+
+class Main {
+    public static void main(String[] args) {
+        플레이어 a플레이어1;
+        a플레이어1 = new 플레이어();
+        a플레이어1.나이 = 20;
+        a플레이어1.이름 = "홍길동";
+        a플레이어1.직업 = "의적";
+        
+    }
+}
+
+class 플레이어 {
+    int 나이;
+    String 이름;
+    String 직업;
+
+}
