@@ -1,0 +1,28 @@
+package org.example;
+
+
+class Main {
+    public static void main(String[] args) {
+        //1
+        자동차 a자동차 = new 자동차();
+        //2
+        a자동차.달리다();
+        a자동차.서다();
+        //3
+        new 자동차().달리다();
+        new 자동차().서다();
+        //자동차
+        자동차.달리다();
+    }
+}
+
+class 자동차 {
+    // static은 객체화 하지 않고 쓰겠다, 설계도 차원에서 기능 뽑아 쓰고싶다.
+    static void 달리다() {
+        System.out.println("달리다");
+    }
+
+    void 서다() {
+        System.out.println("서다");
+    }
+} 
