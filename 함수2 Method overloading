@@ -2,22 +2,28 @@ package org.example;
 
 
 class Main {
-    public static void main(String[] args) {
-//        계산기.합(); x
+    static int a = 20;
+
+    public static void main(String[] args) {// static은 static끼리만 통신이 가능o.//main 함수
+
+        System.out.println(a);
+
+        int a = 30;
+        System.out.println(a);
+
         계산기.합(10, 20);  //////
-        계산기.합(20, 50);  /////// 외부
-        계산기.합(30, 40);  /////
 
-        계산기.합(9);
-
+        exam();
+    }
+    public static void exam(){
+        System.out.println("a: " + a);
     }
 }
 
 class 계산기 {
 
-    static void 합(int c) {
-        System.out.println(c);
-    }
+    int a = 40;
+
 
     static void 합(int a, int b) {//매개변수(parameter //합(int a, int b) - 매서드 시그니처 매개변수의 중복에 대해서 문제가 되는것이아닌 타입도 함께 본다.
 
@@ -25,6 +31,6 @@ class 계산기 {
 //        int b = 20;
         System.out.println("a: " + a);////
         System.out.println("b: " + b);////// 내부
-//        System.out.println(a + b);//////// Method Overloading 메서드의 다형성
+        System.out.println(a + b);//////// Method Overloading 메서드의 다형성
     }
 }
