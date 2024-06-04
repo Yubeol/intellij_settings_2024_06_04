@@ -1,0 +1,42 @@
+package org.example;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// 문제 : 자동차 객체를 담을 변수를 만들어주세요.
+
+class Main {
+    public static void main(String[] args) {
+        자동차 a자동차1 = new 자동차();
+        자동차 a자동차2 = new 자동차();
+        자동차 a자동차3 = new 자동차();
+
+        a자동차1.번호 = 1;
+        a자동차2.번호 = 2;
+        a자동차3.번호 = 3;
+
+        a자동차1.최고속력 =230;
+        a자동차2.최고속력 = 210;
+        a자동차3.최고속력 = 250;
+
+        a자동차1.달리다();
+        a자동차2.달리다();
+        a자동차3.달리다();
+
+//        System.out.println("자동차1의 최고속력은"+ a자동차1.최고속력 + "km 입니다." );
+//        System.out.println("자동차2의 최고속력은"+ a자동차2.최고속력 + "km 입니다." );
+//        System.out.println("자동차2의 최고속력은"+ a자동차3.최고속력 + "km 입니다." );
+
+    }
+}
+
+class 자동차 {
+    int 최고속력;
+    int 번호;
+    void 달리다(){
+
+        System.out.println(this.번호+"자동차가 "+this.최고속력+"km로달립니다" );
+        System.out.println(this.번호+"자동차가 "+this.최고속력+"km로달립니다" );
+        System.out.println(this.번호+"자동차가 "+this.최고속력+"km로달립니다" );
+
+    }
+}
