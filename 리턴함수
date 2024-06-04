@@ -6,7 +6,7 @@ class Main {
         int rs = 10 + 30;
         System.out.println("rs : " + rs);//1
         int rs2 = 계산기.합(10, 20);//2
-        System.out.println(rs2); //return값 //3
+        System.out.println("rs2: " + rs2); //return값 //3
     }
 }
 
