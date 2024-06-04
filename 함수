@@ -1,0 +1,22 @@
+package org.example;
+
+
+class Main {
+    public static void main(String[] args) {
+        new MyClass().hi();
+
+        MyClass a = new MyClass();
+        a.hi();
+
+        funA();
+    }
+    static void funA(){
+        System.out.println("funA 실행됨");
+    }
+}
+
+class  MyClass{
+    void hi(){
+        System.out.println("hi 실행됨");
+    }
+}
