@@ -1,0 +1,30 @@
+package org.example;
+
+
+class Main {
+    public static void main(String[] args) {
+//        계산기.합(); x
+        계산기.합(10, 20);  //////
+        계산기.합(20, 50);  /////// 외부
+        계산기.합(30, 40);  /////
+
+        계산기.합(9);
+
+    }
+}
+
+class 계산기 {
+
+    static void 합(int c) {
+        System.out.println(c);
+    }
+
+    static void 합(int a, int b) {//매개변수(parameter //합(int a, int b) - 매서드 시그니처 매개변수의 중복에 대해서 문제가 되는것이아닌 타입도 함께 본다.
+
+//        int a = 10; //고정값
+//        int b = 20;
+        System.out.println("a: " + a);////
+        System.out.println("b: " + b);////// 내부
+//        System.out.println(a + b);//////// Method Overloading 메서드의 다형성
+    }
+}
