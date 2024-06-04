@@ -9,6 +9,10 @@ public class Main {
         a.name = "김철수";
         a.isMarried = true;
         a.introduce();
+//        System.out.println("a의 나이: " + a.age);
+//        a.age++;
+//        a.introduce();
+//        System.out.println("a의 나이: " + a.age);
 
         사람 b = new 사람();
         b.age = 33;
@@ -21,11 +25,17 @@ public class Main {
 
 class 사람 {
     int age;
-
     String name;
     boolean isMarried;
 
     void introduce() {
-        System.out.println("안녕, 나는 23살 기혼, 김철수야 ");
+//        int age = this.age;
+//        String name = this.name;
+//        boolean isMarried = this.isMarried;
+        System.out.println("===자기소개===");
+        System.out.printf("이름: %s\n", this.name );
+        System.out.printf("나이: %d\n", this.age);
+        System.out.printf("결혼여부: %b\n", this.isMarried);
+
     }
 }
