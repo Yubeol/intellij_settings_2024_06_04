@@ -1,0 +1,18 @@
+package org.example;
+
+
+class Main {
+    public static void main(String[] args) {
+        int rs = 10 + 30;
+        System.out.println("rs : " + rs);//1
+
+        boolean rs2 = 계산기.합(10, 20);//2
+        System.out.println("rs2: " + rs2); //return값 //3
+    }
+}
+
+class 계산기 {
+    static boolean 합(int a, int b) { //void 타입은 return값을 받을 수 없다.
+        return a == b; //return값 //3
+    }
+}
