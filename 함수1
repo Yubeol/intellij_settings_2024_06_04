@@ -1,0 +1,24 @@
+package org.example;
+
+
+class Main {
+    public static void main(String[] args) {
+//        계산기.합();
+        계산기.합(10, 20);  //////
+        계산기.합(20, 50);        // //외부
+
+        계산기.합(30, 40);  /////
+
+    }
+}
+
+class 계산기 {
+    static void 합(int a, int b) {//매개변수(parameter
+
+//        int a = 10; //고정값
+//        int b = 20;
+        System.out.println("a: " + a);////
+        System.out.println("b: " + b);////// 내부
+        System.out.println(a + b);////////
+    }
+}
